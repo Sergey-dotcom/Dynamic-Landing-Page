@@ -4,6 +4,8 @@ const greeting = document.getElementById("greeting");
 const name = document.getElementById("name");
 const focus = document.getElementById("focus");
 
+// const showAmPm = true;
+
 // Show time
 function showTime() {
   let today = new Date();
@@ -20,7 +22,7 @@ function showTime() {
   // Output Time
   time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(
     sec
-  )}`;
+  )}`; // ${showAmPm ? amPm : ""}
 
   setTimeout(showTime, 1000);
 }
